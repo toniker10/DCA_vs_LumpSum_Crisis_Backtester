@@ -87,9 +87,16 @@ For a stronger conclusion, you'd need a rolling backtest across many decades (e.
 
 ## Installation & Usage
 
+The script installs its own required packages at runtime (via `pip`), so you can simply run:
+
+```bash
+python DCA_vs_LumpSum_Crisis_Backtester.py
+```
+
+If you'd rather install them upfront:
+
 ```bash
 pip install yfinance plotly pandas numpy scipy
-python DCA_vs_LumpSum_Crisis_Backtester.py
 ```
 
 The script runs best in a Jupyter/Colab notebook because of the `fig.show()` (Plotly) and `display()` (pandas) calls at the end.
